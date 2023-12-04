@@ -5,17 +5,15 @@ import java.util.List;
 
 public class myMain {
     public static void main(String[] args) {
-          LinkListCreation<Integer> l= new LinkListCreation<Integer>();
-          l.add(10);
-          l.add(20);
-          l.add(30);
-          l.add(50);
-          l.addAtIndex(3,40);
-          Iterator itr=l.iterator();
-          while (itr.hasNext())
-          {
-              System.out.println(itr.next());
-          }
+        Integer []a={1,2,6,4,7,5,9,3};
+        MyHeapData<Integer> l=new MyHeapData<>(a);
+        l.insert(5);
+        l.insert(20);
+        l.insert(0);
+        System.out.println(l);
+
+
+
 
 
     }
